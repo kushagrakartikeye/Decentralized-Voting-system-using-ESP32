@@ -1,0 +1,16 @@
+{
+  "name": "rfid-voting-backend",
+  "version": "1.0.0",
+  "description": "RFID voting system backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "alchemy-sdk": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "ethers": "^6.13.5"
+  }
+}
