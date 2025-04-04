@@ -92,7 +92,13 @@ The smart contract, deployed at **0x79846Ce1a66e2288051Eb9D51045cA9Ab14C4eF0**, 
 
 ## Tracking Votes
 - **Etherscan:** Search for transactions using the smart contract address.
-- **Smart Contract Call:** Use `getVoteCount()` to retrieve vote counts.
+- **Smart Contract
+
+## **Working Video**
+
+https://github.com/user-attachments/assets/64d15e4b-c856-4909-84e9-2cc59c6519dd
+
+t Call:** Use `getVoteCount()` to retrieve vote counts.
 
 ## Security Measures
 - **RFID Tag Uniqueness:** Each tag can be used only once per voting cycle to prevent duplicate votes.
