@@ -74,6 +74,16 @@ graph TD;
    ```
 3. Copy the deployed contract address and update the backend configuration.
 
+## Smart Contract Details
+The smart contract, deployed at **0x79846Ce1a66e2288051Eb9D51045cA9Ab14C4eF0**, ensures secure and transparent vote storage on the Ethereum blockchain. It prevents duplicate voting by tracking RFID tag usage and allows retrieval of voting data through blockchain queries. Additionally, it provides a mechanism to determine the winner based on the highest number of votes.
+
+### Smart Contract Functionality
+- **castVote:** Records a vote by linking an RFID tag to a specific button press and stores it on the blockchain.
+- **getVoteCount:** Returns the total number of votes cast.
+- **getVote:** Retrieves details of a specific vote, including the RFID tag, button pressed, and timestamp.
+- **pickWinner:** Identifies the button with the highest votes and declares it as the winner.
+- **resetVote:** Allows the owner to reset a vote for a specific RFID tag.
+
 ## Usage
 1. Scan an RFID tag to authenticate.
 2. Press one of the four voting buttons.
@@ -89,41 +99,6 @@ graph TD;
 - **Encrypted Transactions:** Transactions are signed and encrypted using Ethereum cryptographic protocols.
 - **Tamper-Proof Records:** Blockchain ensures that once a vote is stored, it cannot be altered.
 - **Private Key Security:** Private keys are stored securely on the backend and never exposed.
-
-## Use Case Scenarios
-### Scenario 1: University Elections
-A university conducts student body elections using this system. Each student is assigned an RFID tag linked to their student ID. They scan their tag and press their preferred candidate’s button. The vote is instantly recorded on Ethereum and can be verified on Etherscan.
-
-### Scenario 2: Corporate Board Elections
-A company uses the system to conduct board member elections. RFID tags are issued to board members, and votes are cast electronically. This eliminates ballot tampering and ensures transparency.
-
-### Scenario 3: Community Polls
-A community uses the system to decide on local matters. Residents receive RFID tags, and their votes are registered securely on the blockchain.
-
-## Troubleshooting
-### Problem: ESP32 is not detecting RFID tags
-**Solution:**
-- Ensure the RFID module is correctly wired to the ESP32.
-- Check the power supply (RFID modules require 3.3V or 5V depending on the model).
-- Verify that the MFRC522 library is installed and correctly initialized.
-
-### Problem: No transaction appears on Etherscan
-**Solution:**
-- Confirm that the backend server is running and correctly configured.
-- Check that the Ethereum wallet has enough gas for transactions.
-- Ensure the smart contract address is correctly updated in the backend.
-
-### Problem: Port busy error when uploading to ESP32
-**Solution:**
-- Close any programs using the serial port (e.g., Arduino Serial Monitor, Processing IDE).
-- Restart the computer and try again.
-
-## Future Improvements
-- **Web Dashboard:** Create a UI for real-time vote tracking and results visualization.
-- **Mobile App Integration:** Allow users to authenticate using a mobile app instead of RFID tags.
-- **Multi-Smart Contract Support:** Enable elections for different organizations with independent contract instances.
-- **Layer 2 Integration:** Implement Optimistic Rollups or zk-Rollups to reduce Ethereum gas fees.
-- **Decentralized Storage:** Use IPFS for additional voting record storage.
 
 ## License
 This project is licensed under the MIT License.
