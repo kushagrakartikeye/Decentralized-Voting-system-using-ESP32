@@ -3,6 +3,10 @@
 ## Overview
 This project is a decentralized voting system that integrates an RFID module, four buttons, and an ESP32 microcontroller. The system ensures secure and autonomous vote registration on the Ethereum blockchain through a Node.js backend. The entire transaction process is automated, allowing votes to be tracked on Etherscan or queried via smart contract functions.
 
+## **Working Video**
+
+https://github.com/user-attachments/assets/64d15e4b-c856-4909-84e9-2cc59c6519dd
+
 ## Features
 - **RFID Authentication:** Each RFID tag can be used only once per voting cycle.
 - **Button-Based Voting:** The system supports four distinct voting options, each represented by a button.
@@ -94,9 +98,7 @@ The smart contract, deployed at **0x79846Ce1a66e2288051Eb9D51045cA9Ab14C4eF0**, 
 - **Etherscan:** Search for transactions using the smart contract address.
 - **Smart Contract
 
-## **Working Video**
 
-https://github.com/user-attachments/assets/64d15e4b-c856-4909-84e9-2cc59c6519dd
 
 t Call:** Use `getVoteCount()` to retrieve vote counts.
 
