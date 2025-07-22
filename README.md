@@ -12,7 +12,7 @@ This project is a decentralized voting system that integrates an RFID module, fo
 
 ## Features
 
-### 🌐 Web-based Voting Interface !!NEW ADDITION
+### 🌐 Web-based Voting Interface !!s🌟NEW ADDITION
 
 Modern React web application with MetaMask integration for browser-based voting.
 
@@ -30,20 +30,17 @@ Modern React web application with MetaMask integration for browser-based voting.
 ## System Architecture
 
 ```mermaid
-graph TD;
-    A[RFID Module] -->|Scan Unique Tag| B(ESP32)
-    B -->|Valid Tag Detected| C[Allow Button Press]
-    C -->|Button Pressed| D[Vote Registered]
-    D -->|Send Data| E[Node.js Backend]
-    E -->|Sign Transaction| F[Ethereum Smart Contract]
+flowchart TD
+    A[RFID + ESP32 Hardware] -->|Scans RFID Tag| B[ESP32 Firmware]
+    B -->|Sends vote & tag to| C[Smart Contract]
+    D[React Frontend 🧠] -->|Cast vote using Tag ID + Button| C
+    D -->|View votes, declare winner| C
+    D -->|Real-time tracking & dashboard| C
+    C -->|Stores vote on| E[(Ethereum Blockchain)]
+    D -->|Query vote status, results| C
+    B -->|Displays LED result| F[LED Feedback System]
+    D -->|Admin tools: reset tags, pick winner| C
 
-    G[\u{1F310} React Frontend] -->|MetaMask| F
-    G -->|Direct Blockchain| F
-    F -->|Real-time Events| G
-
-    F -->|Store Vote| H[Ethereum Blockchain]
-    H -->|Track via Etherscan| I[User]
-    H -->|Query via Smart Contract| J[Admin]
 ```
 
 ---
