@@ -235,21 +235,3 @@ Deployed at: `0x79846Ce1a66e2288051Eb9D51045cA9Ab14C4eF0`
 * MetaMask Client Security
 
 ---
-
-## License
-
-MIT License
-
----
-
-## Contributing
-
-Pull requests are welcome! Help us improve and expand the project.
-
----
-
-## Acknowledgments
-
-* Ethereum & Hardhat Documentation
-* Community Blockchain Developers
-* React, MetaMask & ethers.js contributors
