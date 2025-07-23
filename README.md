@@ -1,5 +1,14 @@
 # Decentralized Voting System with RFID and ESP32
 
+![ESP32](https://img.shields.io/badge/ESP32-DevKit-blue)
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![React](https://img.shields.io/badge/React-18-blue)
+![MetaMask](https://img.shields.io/badge/MetaMask-Web3-orange)
+![Ethereum](https://img.shields.io/badge/Ethereum-Sepolia-purple)
+![Hardhat](https://img.shields.io/badge/Hardhat-Testing%20&%20Deploy-yellow)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.19-black)
+![Alchemy](https://img.shields.io/badge/Alchemy-API-lightblue)
+![RFID](https://img.shields.io/badge/RFID-MFRC522-red)
 ## Overview
 
 This project is a decentralized voting system that integrates an RFID module, four buttons, and an ESP32 microcontroller. The system ensures secure and autonomous vote registration on the Ethereum blockchain through a Node.js backend. The entire transaction process is automated, allowing votes to be tracked on Etherscan or queried via smart contract functions.
