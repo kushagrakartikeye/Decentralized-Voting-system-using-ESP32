@@ -126,6 +126,17 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 ### 🛠️ Frontend Setup
 
+### Dashboard common for all users
+<img width="1919" height="949" alt="Screenshot 2025-08-21 121841" src="https://github.com/user-attachments/assets/f4772ecb-b160-4f5e-b04b-57e374c660aa" />
+<img width="1919" height="945" alt="Screenshot 2025-08-21 121902" src="https://github.com/user-attachments/assets/64ebd3c2-09a7-4fa2-9002-76994caefbf8" />
+<img width="1919" height="947" alt="Screenshot 2025-08-21 121925" src="https://github.com/user-attachments/assets/fceda17f-73fd-4844-b251-d1daf7c1e9ff" />
+<img width="1919" height="947" alt="Screenshot 2025-08-21 121946" src="https://github.com/user-attachments/assets/caad2382-4ca8-4491-a588-a528d134d96e" />
+<img width="1919" height="949" alt="Screenshot 2025-08-21 122008" src="https://github.com/user-attachments/assets/dfe21794-7736-42f1-a878-56c3fbbee9b6" />
+
+### Owner only dashboard (for election commission)
+<img width="1919" height="949" alt="Screenshot 2025-08-21 122302" src="https://github.com/user-attachments/assets/942031ef-55aa-409d-8a02-ba70d092016c" />
+<img width="1919" height="937" alt="Screenshot 2025-08-21 122331" src="https://github.com/user-attachments/assets/5c199bc3-4d28-4e82-b00d-47146b37a094" />
+
 ```bash
 cd frontend
 npm install
